@@ -1,0 +1,305 @@
+body{ margin: 0%;}
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía Única: Quicksand */
+ h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Antonio', sans-serif; }
+h1{ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h3, h4, h6, p, figure { margin: 0; }
+
+
+/*Aside boton de ws reutilizable*/
+aside#boton-whatsapp {width: 45px;height: 45px;margin: 0;float: none;position: fixed;right: 15px;bottom: 15px;z-index: 99998;}
+aside#boton-whatsapp a { width: 45px;height: auto;display: block;margin: 0;float: none;position: relative;display: block;background: #00bb2d;border-radius: 50%;text-align: center;transition: all 0.3s ease-in;padding: 10px 0;}
+aside#boton-whatsapp a, i { font-size: 1.3em;line-height: 1em;color: #fff;transition: all 0.3s ease-in;}
+aside#boton-whatsapp a:hover {background: #000;transition: all 0.3s ease-in; }
+aside#boton-whatsapp a:hover i {color: #00bb2d;transition: all 0.3s ease-in;}
+    
+/* Componente Menú movil responsive reutilizable*/
+
+aside#menu-hamburguesa {  width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background:  #721340}
+aside#menu-hamburguesa a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: block; text-decoration: none; color: #fff; background: #ff7d9d; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+aside#menu-hamburguesa a#abrir-menu:hover{ background:#721340; transition: all 0.3s ease-in}
+aside#menu-hamburguesa a#abrir-menu i:hover{color:   #721340;transition: all 0.3s ease-in;}
+    
+aside#menu-hamburguesa a#cerrar-menu{ width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: #fff; background: #ff7d9d; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+    
+aside#menu-hamburguesa a#cerrar-menu:hover{ background:  #721340; transition: all 0.3s ease-in;  }
+    
+aside#menu-hamburguesa nav{width: 60%; height: auto; margin: 15% auto; float: none; position: relative;  }
+aside#menu-hamburguesa nav a{width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in;  }
+aside#menu-hamburguesa nav a:hover{color: #ff7d9d; transition: all 0.3s ease-in; }
+
+
+
+
+
+/*header*/
+
+
+header{ width: 100%; height: 80px; margin: 0; float: none; position: fixed; left: 0; top: 0; z-index: 99; background: rgba(218, 174, 208, 0.822);}
+header article figure {margin:0; padding: 0;}
+header article figure a { width: 13%;height: auto;margin: 0 auto;float: none;position: relative;display: block;text-decoration: none; text-decoration-line: none;}
+header article figure a h1 {width: auto;height: 223px;margin: 25px auto;float: none;position: relative;display: block; text-decoration: none; text-decoration-line: none; color: darkmagenta; z-index: 9999;}
+
+
+main { width: 100%; height: auto; margin: 0 auto; float: none; position: relative;}
+
+
+/* header de paginas categoria */
+
+main section#banner-superior{width: 100%; height: 60vh; top:-100px; margin: 0; float: left; position: relative; background:url(https://instagram.fbaq6-1.fna.fbcdn.net/v/t51.2885-15/e35/169643261_947523922719267_5931034111653818866_n.jpg?tp=1&_nc_ht=instagram.fbaq6-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=UonjMQfqp8AAX-IFu_Z&edm=AGenrX8BAAAA&ccb=7-4&oh=87ffeb135735573c8166cf914f3816b1&oe=60C803DD&_nc_sid=5eceaa)no-repeat  bottom center; background-size: cover;}
+main section#banner-superior article{margin:0; padding: 0;}
+main section#banner-superior article h1{    width: 91%;
+   height: auto;
+   display: block;
+   float: none;
+   position: absolute;
+   bottom: -1px;
+   left: 33%;
+   z-index: 2;
+   font-size: 3.125em;
+   padding: 87px 0px;
+   color: rgb(255 255 255);}
+   main section#banner-superior article#paginas h1 {width: 91%;
+   height: auto;
+   display: block;
+   float: none;
+   position: absolute;
+   bottom: 29px;
+   left: 33%;
+   z-index: 2;
+   font-size: 3.125em;
+   padding: 87px 0px;
+   color: darkred;}
+  
+
+
+/* slick-slider */
+
+main section#zona-slider{ width: 100%; height: 122vh; margin: 352px auto; float: none; position: relative; }
+main section#zona-slider article.slick-slider{width: 100%; height: 157vh; margin: -354px auto; float: none; position: relative; }
+main section#zona-slider article.slick-slider figure#slide-01{width: 100%; height: 157vh; top:187px;margin: 0; float: left; position: relative; background: url(https://cdn.pixabay.com/photo/2015/03/26/23/09/cake-pops-693645_960_720.jpg) no-repeat  bottom center; background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-02{width: 100%; height: 157vh; top:187px; margin: 0; float: left; position: relative;background: url(https://cdn.pixabay.com/photo/2017/03/27/14/20/cupcakes-2179039_960_720.jpg) no-repeat top center; background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-03{width: 100%; height: 157vh; top:187px; margin: 0; float: left; position: relative;background: url(https://cdn.pixabay.com/photo/2019/04/19/17/49/cake-balls-4139989_960_720.jpg) no-repeat top center; background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-01#element.style {width: 1349px;position: relative;left: 0px;top: 200px;z-index: 999;opacity: 1;}
+
+main section#zona-slider article.slick-slider .slick-prev {left: 25px !important;z-index: 9 !important;top: 69%; font-size: 0;line-height: 0;position: absolute;display: block;width: 20px;height: 20px;padding: 0;-webkit-transform: translate(0, -50%);-ms-transform: translate(0, -50%);transform: translate(0, -50%);cursor: pointer;color: transparent;border: none;outline: none;background: transparent;}
+main section#zona-slider article.slick-slider .slick-next {right: 25px !important;z-index: 9 !important;top: 69%;font-size: 0;line-height: 0;position: absolute;display: block;width: 20px;height: 20px;padding: 0;-webkit-transform: translate(0, -50%);-ms-transform: translate(0, -50%);transform: translate(0, -50%);cursor: pointer;color: transparent;border: none;outline: none;background: transparent;}
+
+
+/* Ficha producto */
+section#ficha-producto{width: 80%;
+   height: 286px;
+   float: none;
+   position: relative;
+   margin: 0 auto 85px;}
+section#ficha-producto article{     width: 100%;
+   height: auto;
+   float: left;
+   position: relative;
+   text-align: justify;}
+section#ficha-producto article figure{ width: 45%;
+   height: 367px;
+   float: left;
+   position: relative;
+   margin: 0% 4% 3%;;
+   padding:5% auto ; }
+section#ficha-producto article figure img{width: 100%;
+   height: 286px;
+   float: none;
+   position: absolute; }
+ 
+section#ficha-producto article figure div#info-producto{ width: 1100px; height: auto; margin: 0 auto; float: none; position: relative;}
+section#ficha-producto article figure div#info-producto h2{    margin: 18px; display: block;
+   font-size: 1.5em;
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;}
+section#ficha-producto article figure div#info-producto p{   margin: 29px;}
+section#ficha-producto article figure div#info-producto h5{margin: 29px; font-size: 3%;  display: block;
+   font-size: 1.5em;
+   margin-block-start: 0.83em;
+   margin-block-end: 0.83em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;}
+section#ficha-producto article figure div#info-producto button {    padding: 10px 30px;
+   margin: 24px 0 0 20px;
+   background-color:  #0f167a;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 1.3em;
+text-decoration: none; }
+           
+
+/* Bloque Productos */
+main section.bloque-productos { width: 100%; height: auto; margin: 92px auto ; float: none; position: relative; }
+main section.bloque-productos article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article h3 { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; }
+main section.bloque-productos article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.bloque-productos article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.nombre-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a span.precio-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.bloque-productos article nav a:hover { transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.nombre-producto { color: #000; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover span.precio-producto { color: #333; text-shadow: none; transition: all 0.3s ease-in; }
+main section.bloque-productos article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+
+
+
+/* Bloque Productos */
+main section.menu-categorias-2-col { width: 100%; height: auto; margin: 92px auto ; float: none; position: relative; }
+main section.menu-categorias-2-col article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.menu-categorias-2-col article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section.menu-categorias-2-col article nav a { width: 524px; height: 286px; margin: 12px; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+main section.menu-categorias-2-col article nav a span.nombre-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 70px; left: 5%; z-index: 2; font-size: 3.125em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 400; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.menu-categorias-2-col article nav a span.precio-producto { width: 90%; height: auto; display: block; float: none; position: absolute; bottom: 35px; left: 5%; z-index: 2; font-size: 2em; letter-spacing: -0.015em; padding: 0 12px; font-weight: 200; color: #fff; text-shadow: 0 0 5px #000; transition: all 0.3s ease-in; }
+main section.menu-categorias-2-col article nav a img { width: 100%; height: auto; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+
+main section.menu-categorias-2-col article nav a:hover { transition: all 0.3s ease-in; }
+main section.menu-categorias-2-col article nav a:hover span.nombre-producto { color: #000; text-shadow: none; transition: all 0.3s ease-in; }
+main section.menu-categorias-2-col article nav a:hover span.precio-producto { color: #333; text-shadow: none; transition: all 0.3s ease-in; }
+main section.menu-categorias-2-col article nav a:hover img { opacity: 0.3; transition: all 0.3s ease-in; }
+ 
+
+
+/* Bloque Categorías */
+main section#bloque-categorias { width: 100%; height: auto; margin: 35px auto 75px; float: none; position: relative; }
+main section#bloque-categorias nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#bloque-categorias nav#pagina-producto { width: 100%; height: auto; margin: 0 227px; float: none; position: relative; }
+main section#bloque-categorias nav a { width: 31%; height: 400px; margin: 0 1%; float: none; position: relative; display: inline-block; transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a#img-decoraciones { background: url('../img/decoracion\ banner.jpg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-acompañantes { background: url('../img/acompañante 3.jpg') no-repeat top center; background-size: cover; }
+main section#bloque-categorias nav a#img-torta { background:url('../img/torta\ 1.jpg') no-repeat top center; background-size: cover; }
+
+main section#bloque-categorias nav a span.nombre-categoria { width: 100%; height: auto; display: block; float: none; position: absolute; top: 0; left: 0; z-index: 2; text-align: center; font-size: 3.125em; line-height: 1em; letter-spacing: 0.035em; padding: 174px 12px; font-weight: 100; color: #fff; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a span.capa-oscura { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; background: rgb(0 0 0 / 35%); transition: all 0.3s ease-in; }
+
+main section#bloque-categorias nav a:hover span.nombre-categoria { letter-spacing: 0.095em; color: #999; transition: all 0.3s ease-in; }
+main section#bloque-categorias nav a:hover span.capa-oscura { background: rgb(0 0 0 / 75%); transition: all 0.3s ease-in; }
+
+
+/* Catalogo de pagina torta */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main div{margin: 0 0 10% ;}
+ 
+body{ background: #fff7fb; }
+
+.wrap{ max-width: 1100px; width: 90%; margin: auto }
+
+.store-wrapper{ display: flex; flex-wrap: wrap }
+
+.category_list{ display: flex; flex-direction: column; width: 18% ; background:  #fbb0ad; border-radius: 29px 29px }
+
+.category_list .category_item{ display: block; width: 90%; padding: 15px 0; margin-bottom: 20px; text-align: center; text-decoration: none; color: #fff; transition: all 0.3s ease-in;}
+.category_list .category_item:hover { color: #3a082f; transition: all 0.3s ease-in;}
+
+
+
+/* PRODUCTOS ============*/
+
+.products-list{ width: 82%; display: flex; flex-wrap: wrap }
+
+
+.products-list .product-item{ width: 22%; margin-left: 3%; margin-bottom: 25px; box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22); display: flex; flex-direction: column; align-items: center; align-self: flex-start transition: all .4s }
+
+.products-list .product-item img{width: 100%}
+
+.products-list .product-item a{ display: block; width: 100%; padding: 8px 0; background: #c67c77 color: #fff; text-align: center; text-decoration: none }
+
+
+    
+
+/* footer */
+/* Footer con 4 columnas reutilizable */
+footer{width: 100%; height: 50%; margin: 0 auto; float: none; position: relative;top: 0%; left: 0%; background:url(https://image.freepik.com/foto-gratis/vista-aerea-sabrosas-rosquillas-sobre-fondo-rosa_23-2147909323.jpg) no-repeat top center; background-size: cover;}
+footer div#ancla-footer {width: 100%; height: 1px; margin: 0; float: none;position: absolute; top: -120px; left: 0;}footer article{width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+footer article div#superior-footer{width: 100%; height: 200px; margin: 0 auto 30px; float: none; position: relative;}
+footer article div#superior-footer div.cajas-footer{width: 230px; height: 200px; margin: 0 60px 0 350px; float: left; position: relative;}
+footer article div#superior-footer div.cajas-footer:last-child {margin: 0;}
+
+footer article div#superior-footer div.cajas-footer img{width: auto; height: 50px; margin: 0 0 15px; display: block; float: none; position: relative;}
+footer article div#superior-footer div.cajas-footer p{width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 300; font-size: 0.9em; line-height: 1.35em; text-align: left; padding: 0 30px 0 0; letter-spacing: 0.03em;}
+footer article div#superior-footer div.cajas-footer h6{ width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.4em; line-height: 1.35em; text-align: left; padding: 0 0 15px 0; letter-spacing: 0.03em; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto { width: 200px; height: auto; display: block; margin: 0; float: none; position: relative;}
+footer article div#superior-footer div.cajas-footer nav#links-contacto a { width: 100%; height: 22px; display: block; margin: 0 auto 5px; float: none; position: relative; transition: all 0.3s ease-in;}
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:first-child{ height: 40px;}
+footer article div#superior-footer div.cajas-footer nav#links-contacto a i{width: 10%; height: auto; display: block; margin: 0 2% 0 0; float: left; position: relative; padding: 3px 0 0 0; color: #8bc8f1; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a span { width: 88%; height: auto; display: block; margin: 0; float: left; position: relative; padding: 0; color: #fff; font-weight: 300; font-size: 0.93em; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover { transition: all 0.3s ease-in;}
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover i{color: #000; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#links-contacto a:hover span { color: #09f; transition: all 0.3s ease-in; }
+    
+    /*componente Botones Redes Sociales*/
+    footer article div#superior-footer div.cajas-footer nav#links-redes{width: 200px; height: 41px; margin: 0; float: none; position: relative; }
+    footer article div#superior-footer div.cajas-footer nav#links-redes a { width: 41px; height: auto; margin: 0; float: left; position: relative; display: block; text-align: center; padding: 10px 0; transition: all 0.3s ease-in;}
+    footer article div#superior-footer div.cajas-footer nav#links-redes a:hover{transition: all 0.3s ease-in;}
+    footer article div#superior-footer div.cajas-footer nav#links-redes a i{font-size: 1.2em; line-height: 1em; color: #fff; transition: all 0.3s ease-in;}
+    footer article div#superior-footer div.cajas-footer nav#links-redes a:hover i{color: #0981e4; transition: all 0.3s ease-in;}
+    
+    /*inferior footer*/
+    footer article div#inferior-footer{width: 100%; height: auto; margin: 0 auto; float: none; position: relative;}
+    footer article div#inferior-footer p {width: auto; height: auto; margin: 0; float: none; position: relative; color: #fff; font-weight: 300; font-size: 0.9em; line-height: 1.35em; text-align: center; padding: 0; letter-spacing: 0.1em;}
+    footer article div#inferior-footer p strong {font-weight: 600;}
+
+
+
+    @media only screen and (max-width: 999px){
+    
+  /* slick-slider */
+
+main section#zona-slider{ height: 50vh; display: block; }
+main section#zona-slider article.slick-slider{height: 50vh; display: block;}
+main section#zona-slider article.slick-slider figure#slide-01{ height: 50vh; display: block;} 
+main section#zona-slider article.slick-slider figure#slide-02{  height: 50vh; display: block;}
+main section#zona-slider article.slick-slider figure#slide-03{  height: 50vh; display: block;}
+  
+
+
+main section.bloque-productos article { width: 80%;}
+main section.bloque-productos article nav a { width: 100%; height: 300px; margin: 0 auto 25px; display:block; overflow: hidden;}
+main section.bloque-productos article nav a img { width: auto; height: 100%; }
+
+footer{width: 100%;}
+footer article div#superior-footer div.cajas-footer img{ width: auto; height: 100%;}
+
+
+
+@media only screen and (max-width: 899px){
+   main section#bloque-categorias nav a { width: 96%; margin: 2% auto; display: block; }
+}
+
+
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+
+
+
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
+
+
+
+
